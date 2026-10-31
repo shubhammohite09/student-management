@@ -1,0 +1,21 @@
+
+   InvalidArgumentException 
+
+  Unexpected end of input
+
+  at C:\Users\Shubham\OneDrive\Desktop\student management\vendor\psy\psysh\src\Shell.php:1516
+    1512▕ 
+    1513▕         if (!$this->hasValidCode()) {
+    1514▕             $this->popCodeStack();
+    1515▕ 
+  ➜ 1516▕             throw new \InvalidArgumentException('Unexpected end of input');
+    1517▕         }
+    1518▕     }
+    1519▕ 
+    1520▕     /**
+
+  1   C:\Users\Shubham\OneDrive\Desktop\student management\vendor\psy\psysh\src\Shell.php:2215
+      Psy\Shell::setCode("echo App\Models\Student::where(")
+
+  2   C:\Users\Shubham\OneDrive\Desktop\student management\vendor\laravel\tinker\src\Console\TinkerCommand.php:77
+      Psy\Shell::execute("echo App\Models\Student::where(")
